@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Marcos\\source\\repos\\Calc_Ohm_V1\\Calc_Ohm_V1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Marcos\\source\\repos\\Calc_Ohm_V1\\Calc_Ohm_V1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marcos\\source\\repos\\Calc_Ohm_V1\\Calc_Ohm_V1.csproj",
+        "projectName": "Calc_Ohm_V1",
+        "projectPath": "C:\\Users\\Marcos\\source\\repos\\Calc_Ohm_V1\\Calc_Ohm_V1.csproj",
+        "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcos\\source\\repos\\Calc_Ohm_V1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
