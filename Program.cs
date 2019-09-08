@@ -12,7 +12,8 @@ namespace Ohm
             int opc = 0;
             while (opc < 4)
             {
-                Console.WriteLine("Escolha uma opção abaixo ...");
+                Console.WriteLine("Escolha uma opção abaixo ok ");
+                Console.WriteLine("");
                 Console.WriteLine("1 = Calculo de Tensão");
                 Console.WriteLine("2 = Calculo de Corrente");
                 Console.WriteLine("3 = Calculo de Resistencia ");
