@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc_Ohm_V1", "Calc_Ohm_V1.csproj", "{EDED508F-E7E8-4D05-BCBB-240368F52CA4}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Calculadora_Ohm", "..\Instalador_Calculadora_ohm\Calculadora_Ohm\Calculadora_Ohm.vdproj", "{54ABF996-EF71-4D21-9CF6-ACE2BB78D991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EDED508F-E7E8-4D05-BCBB-240368F52CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDED508F-E7E8-4D05-BCBB-240368F52CA4}.Release|x86.ActiveCfg = Release|x86
 		{EDED508F-E7E8-4D05-BCBB-240368F52CA4}.Release|x86.Build.0 = Release|x86
+		{54ABF996-EF71-4D21-9CF6-ACE2BB78D991}.Debug|Any CPU.ActiveCfg = Debug
+		{54ABF996-EF71-4D21-9CF6-ACE2BB78D991}.Debug|x86.ActiveCfg = Debug
+		{54ABF996-EF71-4D21-9CF6-ACE2BB78D991}.Release|Any CPU.ActiveCfg = Release
+		{54ABF996-EF71-4D21-9CF6-ACE2BB78D991}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
