@@ -10,14 +10,16 @@ namespace Ohm
         {
 
             int opc = 0;
-            while (opc < 4)
+            while (opc < 6)
             {
-                Console.WriteLine("Escolha uma opção abaixo ok ");
+                Console.WriteLine("Escolha uma opção abaixo ............ ");
                 Console.WriteLine("");
                 Console.WriteLine("1 = Calculo de Tensão");
                 Console.WriteLine("2 = Calculo de Corrente");
                 Console.WriteLine("3 = Calculo de Resistencia ");
-                Console.WriteLine("4 = Para Sair ");
+                Console.WriteLine("4 = Calculo de Potência considerando tensão e corrente ");
+                Console.WriteLine("5 = Calculo de Potencia considerando resistencia e corrente");
+                Console.WriteLine("6 = Para Sair ");
                 Console.WriteLine("");
                 Console.WriteLine("");
                 opc = int.Parse(Console.ReadLine());
@@ -26,6 +28,7 @@ namespace Ohm
                 Console.WriteLine("__________________________________");
                 if (opc == 1)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("Será Efetuado o Calculo de Tensão");
                     Console.WriteLine("");
                     Console.WriteLine("Entre com os valores solicitados abaixo");
@@ -36,13 +39,14 @@ namespace Ohm
                     Console.Write("Resistencia =");
                     ohm1.r = double.Parse(Console.ReadLine()); // carrega valores de resistencia
                     double tensao = ohm1.v();
-                    Console.WriteLine("A Tensão para " + ohm1.i + " amperes " + ohm1.r + " e  ohms é de " + tensao + " volts");
+                    Console.WriteLine("A Tensão para " + ohm1.i + " amperes  e " + ohm1.r + "  ohms é de " + tensao + " volts...");
                     Console.WriteLine("");
                     Console.ReadLine();
                     Console.Clear();
                 }
                 if (opc == 2)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("Será Efetuado o Calculo de Corrente");
                     Console.WriteLine("");
                     Console.WriteLine("Entre com os valores solicitados abaixo");
@@ -53,7 +57,7 @@ namespace Ohm
                     Console.Write("Resistencia =");
                     ohm1.r = double.Parse(Console.ReadLine()); // carrega valores de resistencia
                     double corrente = ohm1.c();
-                    Console.WriteLine("A corrente para " + ohm1.t + " volts " + ohm1.r + " e  ohms é de " + corrente + " amperes");
+                    Console.WriteLine("A corrente para " + ohm1.t + " volts  e " + ohm1.r + "  ohms é de " + corrente + " amperes...");
                     Console.WriteLine("");
                     Console.ReadLine();
                     Console.Clear();
@@ -61,6 +65,7 @@ namespace Ohm
                 }
                 if (opc == 3)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("Será Efetuado o Calculo de Resistencia");
                     Console.WriteLine("");
                     Console.WriteLine("Entre com os valores solicitados abaixo");
@@ -71,7 +76,7 @@ namespace Ohm
                     Console.Write("Corrente =");
                     ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
                     double resistencia = ohm1.r();
-                    Console.WriteLine("A resistencia para " + ohm1.t + " volts " + ohm1.i + " amperes é de " + resistencia + " ohms");
+                    Console.WriteLine("A resistencia para " + ohm1.t + " volts e  " + ohm1.i + " amperes é de " + resistencia + " ohms...");
                     Console.WriteLine("");
                     Console.ReadLine();
                     Console.Clear();
@@ -79,6 +84,45 @@ namespace Ohm
                 }
                 if (opc == 4)
                 {
+                    Console.WriteLine("");
+                    Console.WriteLine("Será Efetuado o Calculo de Potência ");
+                    Console.WriteLine("");
+                    Console.WriteLine("Entre com os valores solicitados abaixo");
+                    Console.WriteLine("");
+                    CalcOhmPot1 ohm1 = new CalcOhmPot1();
+                    Console.Write("Tensão =");
+                    ohm1.t = double.Parse(Console.ReadLine()); // carrega valores de tensao
+                    Console.Write("Corrente =");
+                    ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
+                    double potencia  = ohm1.p();
+                    Console.WriteLine("A potencia  para " + ohm1.t + " volts e  " + ohm1.i + " amperes é de " + potencia + " watts...");
+                    Console.WriteLine("");
+                    Console.ReadLine();
+                    Console.Clear();
+
+                }
+                if (opc == 5)
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Será Efetuado o Calculo de Potência tendo resistencia e corrente ");
+                    Console.WriteLine("");
+                    Console.WriteLine("Entre com os valores solicitados abaixo");
+                    Console.WriteLine("");
+                    CalcOhmPot2 ohm1 = new CalcOhmPot2();
+                    Console.Write("Resistencia  =");
+                    ohm1.r = double.Parse(Console.ReadLine()); // carrega valores da resistencia
+                    Console.Write("Corrente =");
+                    ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
+                    double potencia2 = ohm1.p2();
+                    Console.WriteLine("A potencia  para " + ohm1.r + " ohms e  " + ohm1.i + " amperes é de " + potencia2 + " watts...");
+                    Console.WriteLine("");
+                    Console.ReadLine();
+                    Console.Clear();
+
+                }
+                if (opc == 6)
+                {
+                    Console.WriteLine("");
                     Console.WriteLine("Voce escolheu a opção para sair");
 
                     Console.WriteLine("Para sair acione qualquer tecla");
@@ -87,6 +131,7 @@ namespace Ohm
                 if (opc == 0)
 
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("Obrigatorio escolher um parametro");
                     Console.ReadKey();
 

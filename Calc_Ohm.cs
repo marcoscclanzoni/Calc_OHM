@@ -34,4 +34,24 @@ namespace Ohm
             return t / i;
         }
     }
+    class CalcOhmPot1 // calculo de potencia tendo Tensão e Corrente 
+    {
+        public double t; // entrada de tensao 
+        public double i; // entrada de corrente
+        public double p()
+        {
+            return t * i; // resultado em watts 
+        }
+
+    }
+    class CalcOhmPot2 // Calculo de potencia tendo resistencia e corrente
+    {
+        public double i;
+        public double r;
+        public double p2()
+        {
+            return (i * i) * r;
+        }
+
+    }
 }
