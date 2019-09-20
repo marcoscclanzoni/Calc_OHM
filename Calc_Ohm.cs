@@ -8,8 +8,10 @@ namespace Ohm
     {
 
         public double i; // corrente
+    
         public double r; // resistencia
         public double v()
+
         {
             return i * r;
         }
@@ -19,7 +21,7 @@ namespace Ohm
     {
         public double t;// tensão
         public double r;// resistencia
-        public double c()
+        public double C()
         {
             return t / r;
 
@@ -29,7 +31,7 @@ namespace Ohm
     {
         public double t;// tensao
         public double i;// entrada de corrente
-        public double r()
+        public double R()
         {
             return t / i;
         }
@@ -38,7 +40,7 @@ namespace Ohm
     {
         public double t; // entrada de tensao 
         public double i; // entrada de corrente
-        public double p()
+        public double P()
         {
             return t * i; // resultado em watts 
         }
@@ -48,7 +50,7 @@ namespace Ohm
     {
         public double i;
         public double r;
-        public double p2()
+        public double P2()
         {
             return (i * i) * r;
         }

@@ -36,6 +36,7 @@ namespace Ohm
                     CalcOhmTensao ohm1 = new CalcOhmTensao();
                     Console.Write("Corrente =");
                     ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
+                     
                     Console.Write("Resistencia =");
                     ohm1.r = double.Parse(Console.ReadLine()); // carrega valores de resistencia
                     double tensao = ohm1.v();
@@ -56,8 +57,16 @@ namespace Ohm
                     ohm1.t = double.Parse(Console.ReadLine()); // carrega valores de tensao
                     Console.Write("Resistencia =");
                     ohm1.r = double.Parse(Console.ReadLine()); // carrega valores de resistencia
-                    double corrente = ohm1.c();
-                    Console.WriteLine("A corrente para " + ohm1.t + " volts  e " + ohm1.r + "  ohms é de " + corrente + " amperes...");
+                    if (ohm1.r != 0)
+                    {
+                        double corrente = ohm1.C();
+                        Console.WriteLine("A corrente para " + ohm1.t + " volts  e " + ohm1.r + "  ohms é de " + corrente + " amperes...");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O valor da resistencia não pode ser zero");
+                    }
+                   
                     Console.WriteLine("");
                     Console.ReadLine();
                     Console.Clear();
@@ -75,8 +84,15 @@ namespace Ohm
                     ohm1.t = double.Parse(Console.ReadLine()); // carrega valores de tensao
                     Console.Write("Corrente =");
                     ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
-                    double resistencia = ohm1.r();
-                    Console.WriteLine("A resistencia para " + ohm1.t + " volts e  " + ohm1.i + " amperes é de " + resistencia + " ohms...");
+                    if (ohm1.i != 0 )
+                    {
+                        double resistencia = ohm1.R();
+                        Console.WriteLine("A resistencia para " + ohm1.t + " volts e  " + ohm1.i + " amperes é de " + resistencia + " ohms...");
+                    }
+                    else
+                    {
+                        Console.WriteLine("O valor de corrente não pode ser zero ");
+                    }
                     Console.WriteLine("");
                     Console.ReadLine();
                     Console.Clear();
@@ -94,7 +110,7 @@ namespace Ohm
                     ohm1.t = double.Parse(Console.ReadLine()); // carrega valores de tensao
                     Console.Write("Corrente =");
                     ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
-                    double potencia  = ohm1.p();
+                    double potencia  = ohm1.P();
                     Console.WriteLine("A potencia  para " + ohm1.t + " volts e  " + ohm1.i + " amperes é de " + potencia + " watts...");
                     Console.WriteLine("");
                     Console.ReadLine();
@@ -113,7 +129,7 @@ namespace Ohm
                     ohm1.r = double.Parse(Console.ReadLine()); // carrega valores da resistencia
                     Console.Write("Corrente =");
                     ohm1.i = double.Parse(Console.ReadLine()); // carrega valores de corrente
-                    double potencia2 = ohm1.p2();
+                    double potencia2 = ohm1.P2();
                     Console.WriteLine("A potencia  para " + ohm1.r + " ohms e  " + ohm1.i + " amperes é de " + potencia2 + " watts...");
                     Console.WriteLine("");
                     Console.ReadLine();
